@@ -108,6 +108,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 i=new Intent(this, RealizarReserva.class);
                 startActivity(i);
                 break;
+
             default:
                 break;
         }
@@ -211,7 +212,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
     private boolean isEmailValid(String email) {
         //TODO: Replace this with your own logic
-        return email.contains("@");
+        return email.contains("@apres.com");
     }
 
     private boolean isPasswordValid(String password) {

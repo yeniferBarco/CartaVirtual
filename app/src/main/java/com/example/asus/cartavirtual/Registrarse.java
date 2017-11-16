@@ -5,16 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RadioButton;
 
-public class RealizarReserva extends AppCompatActivity implements View.OnClickListener {
+public class Registrarse extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_realizar_reserva);
+        setContentView(R.layout.activity_registrarse);
 
-        Button btnRealizarReserva =(Button) findViewById(R.id.button_confReserva);
+        Button btnRealizarReserva =(Button) findViewById(R.id.buttonConfRegistro);
         btnRealizarReserva.setOnClickListener(this);
 
     }
@@ -28,8 +27,8 @@ public class RealizarReserva extends AppCompatActivity implements View.OnClickLi
 
         Intent i;
         switch (idView){
-            case R.id.button_confReserva:
-                i = new Intent(this, VerCarta.class);
+            case R.id.buttonConfRegistro:
+                i = new Intent(this, RealizarReserva.class);
                 startActivity(i);
                 break;
 
@@ -37,5 +36,4 @@ public class RealizarReserva extends AppCompatActivity implements View.OnClickLi
                 break;
         }
     }
-
 }

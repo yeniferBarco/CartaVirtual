@@ -67,18 +67,29 @@
             android:name=".producto_pollo_teriyaki"
             android:label="Pollo teriyaki" />
         <activity
+            android:name=".RealizarReserva"
+            android:label="Realizar reserva"/>
+        <activity
+            android:name=".BaseDeDatosActivity"
+            android:label="Clientes"/>
+        <activity
+            android:name=".Login"
+            android:label="Login"/>
+        <activity
+            android:name=".Registrarse"
+            android:label="Registrarse"/>
+
+
+        <activity
             android:name=".Main"
-            android:label="APRES">
+            android:label="Carta virtual">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            />
+            </intent-filter>/>
         </activity>
-        <activity android:name=".RealizarReserva" />
-        <activity android:name=".BaseDeDatosActivity" />
-        <activity android:name=".Login"></activity>
+
     </application>
 
 </manifest>
