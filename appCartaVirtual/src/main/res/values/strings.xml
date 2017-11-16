@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Carta virtual</string>
+    <string name="title_activity_maps">Consultar la ubicacion del restaurante</string>
+</resources>

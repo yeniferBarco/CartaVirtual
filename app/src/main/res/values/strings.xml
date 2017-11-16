@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Carta Virtual</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="title_activity_login">Ingresar</string>
+
+    <!-- Strings del login -->
+    <string name="prompt_email">Correo</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in">Entrar o registrarse</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">La dirección de correo es invalida</string>
+    <string name="error_invalid_password">La contraseña es muy corta</string>
+    <string name="error_incorrect_password">Contraseña incorrecta</string>
+    <string name="error_field_required">Campo requerido</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+</resources>
