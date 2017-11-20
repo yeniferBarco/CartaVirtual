@@ -43,9 +43,6 @@
             android:name=".VerCarta"
             android:label="Carta" />
         <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login" />
-        <activity
             android:name=".ProductoSopa"
             android:label="Sopa" />
         <activity
@@ -68,17 +65,13 @@
             android:label="Pollo teriyaki" />
         <activity
             android:name=".RealizarReserva"
-            android:label="Realizar reserva"/>
-        <activity
-            android:name=".BaseDeDatosActivity"
-            android:label="Clientes"/>
+            android:label="Realizar reserva" />
         <activity
             android:name=".Login"
-            android:label="Login"/>
+            android:label="Login" />
         <activity
             android:name=".Registrarse"
-            android:label="Registrarse"/>
-
+            android:label="Registrarse" />
 
         <activity
             android:name=".Main"
@@ -87,7 +80,8 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>/>
+            </intent-filter>
+            />
         </activity>
 
     </application>

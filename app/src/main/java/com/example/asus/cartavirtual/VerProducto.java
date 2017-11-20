@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class VerProducto extends AppCompatActivity implements View.OnClickListener {
 
@@ -33,6 +34,12 @@ public class VerProducto extends AppCompatActivity implements View.OnClickListen
 
         Button btnCerdo =(Button) findViewById(R.id.button_cerdo);
         btnCerdo.setOnClickListener(this);
+
+        ImageButton btnAtras = (ImageButton) findViewById(R.id.button_atras);
+        btnAtras.setOnClickListener(this);
+
+        ImageButton btnHome = (ImageButton) findViewById(R.id.button_home);
+        btnHome.setOnClickListener(this);
     }
 
     @Override
@@ -71,6 +78,14 @@ public class VerProducto extends AppCompatActivity implements View.OnClickListen
                 break;
             case R.id.button_cerdo:
                 i=new Intent(this, cerdo_horno.class);
+                startActivity(i);
+                break;
+            case R.id.button_atras:
+                i = new Intent(this, VerCarta.class);
+                startActivity(i);
+                break;
+            case R.id.button_home:
+                i = new Intent(this, Main.class);
                 startActivity(i);
                 break;
             default:

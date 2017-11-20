@@ -15,17 +15,67 @@
         tools:layout_editor_absoluteX="8dp"
         tools:ignore="MissingConstraints">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <ImageButton
+                android:id="@+id/button_atras"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
+                android:background="@android:color/transparent"
+                android:onClick="atras"
+                app:srcCompat="@android:drawable/ic_menu_revert"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/button_home"
+                android:layout_width="70dp"
+                android:layout_height="46dp"
+                android:layout_weight="0.21"
+                android:background="@android:color/transparent"
+                android:onClick="home"
+                app:srcCompat="@drawable/home"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
         <TextView
             android:id="@+id/textView42"
             android:layout_width="match_parent"
             android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UselessLeaf">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView58"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/textView44"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="serif"
-            android:text="Por favor escoga cuantas mesas desea reservar:"
+            android:text="Por favor escoga cuantas mesas desea reservar"
+            android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="18sp"
             android:textStyle="italic"
@@ -52,11 +102,6 @@
                 android:textColor="@android:color/white"
                 tools:ignore="HardcodedText" />
 
-            <TextView
-                android:id="@+id/textView47"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
             <RadioButton
                 android:id="@+id/r2"
                 android:layout_width="match_parent"
@@ -65,11 +110,6 @@
                 android:textColor="@android:color/white"
                 tools:ignore="HardcodedText" />
 
-            <TextView
-                android:id="@+id/textView49"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
             <RadioButton
                 android:id="@+id/r3"
                 android:layout_width="match_parent"
@@ -77,11 +117,6 @@
                 android:text="3"
                 android:textColor="@android:color/white"
                 tools:ignore="HardcodedText" />
-
-            <TextView
-                android:id="@+id/textView50"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
 
             <RadioButton
                 android:id="@+id/r4"
@@ -99,6 +134,10 @@
         </RadioGroup>
 
 
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/button_confReserva"
@@ -110,5 +149,18 @@
             android:text="Reservar"
             android:textColor="@android:color/white"
             tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/button_cancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="serif"
+            android:onClick="cancelar"
+            android:text="cancelar"
+            android:textColor="@android:color/white"
+            tools:ignore="HardcodedText" />
+
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

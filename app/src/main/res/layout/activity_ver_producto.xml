@@ -7,6 +7,40 @@
     android:background="@drawable/vintage_rojo"
     tools:context="com.example.asus.cartavirtual.VerProducto">
 
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageButton
+            android:id="@+id/button_atras"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:background="@android:color/transparent"
+            android:onClick="atras"
+            app:srcCompat="@android:drawable/ic_menu_revert"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="225dp"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/button_home"
+            android:layout_width="70dp"
+            android:layout_height="46dp"
+            android:layout_weight="0.21"
+            android:background="@android:color/transparent"
+            android:onClick="home"
+            app:srcCompat="@drawable/home"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
 
     <ScrollView
         android:layout_width="368dp"
@@ -20,9 +54,11 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+
+
             <TextView
                 android:id="@+id/textView21"
-                android:layout_width="match_parent"
+                android:layout_width="357dp"
                 android:layout_height="40dp" />
 
             <TextView

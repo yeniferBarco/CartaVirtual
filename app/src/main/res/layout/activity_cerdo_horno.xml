@@ -18,6 +18,42 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <ImageButton
+                android:id="@+id/button_atras"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
+                android:background="@android:color/transparent"
+                android:onClick="atras"
+                app:srcCompat="@android:drawable/ic_menu_revert"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/button_home"
+                android:layout_width="70dp"
+                android:layout_height="46dp"
+                android:layout_weight="0.21"
+                android:background="@android:color/transparent"
+                android:onClick="home"
+                app:srcCompat="@drawable/home"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <TextView
